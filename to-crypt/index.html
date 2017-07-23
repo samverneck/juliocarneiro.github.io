@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Encripta qualquer dado em formato de texto para MD4, MD5 e SHA-1">
+	<meta name="keywords" content="md4, md5, sha-1, sha1, criptografia, hash, hashes">
+	<meta name="author" content="Júlio Carneiro">
+    <title>TO-CRYPT</title>
+	<script src="hashes.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="font-awesome.css" rel="stylesheet">
+	<link href="flexboxgrid.css" rel="stylesheet">
+</head>
+<body >
+	<div class="center col-md-4 col-xs-12 col-sm-8 bg-white text-center margin-top30 margin-bottom30 box-shadow4 padding50">
+	    <h1><i class="fa fa-terminal" aria-hidden="true"></i> TO-CRYPT</h1>
+	    <form name="form" id="form">
+			<input type="text" name="input" placeholder="Digite algo..." class="width100 margin-bottom20 color-green bold">
+			<input type="button" value="MD4" onclick="hash.value = calcMD4(input.value)" class="width100 margin-bottom20 border-none bg-black color-white fade-out pointer"> 
+			<input type="button" value="MD5" onclick="hash.value = calcMD5(input.value)" class="width100 margin-bottom20 border-none bg-black color-white fade-out pointer"> 
+			<input type="button" value="SHA-1" onclick="hash.value = calcSHA1(input.value)" class="width100 border-none bg-black color-white fade-out pointer">
+			<input type="text" name="hash" placeholder="HASH..." class="width100 margin-top20 color-red bold">
+		</form>
+		<div class="row no-margin margin-top30">
+			<i class="fa fa-linux text-full margin-top10 col-md-6 border-right" aria-hidden="true"></i>
+			<i class="fa fa-windows text-full margin-top10 col-md-6" aria-hidden="true"></i>
+		</div>
+		<div class="row no-margin margin-top20">
+			<a href="http://downloads.juliocarneiro.com.br/to-crypt-app-linux-x64.tar.gz" class="center padding20 fade-out  block bg-black color-white col-md-6" title="Baixar TO-CRYPT para Linux x64">Linux x64</a>
+			<a href="" class="center padding20 fade-out  block bg-black color-white col-md-6" title="Em breve...">Windows x64</a>
+		</div>
+		<div class="bg-white color-black center margin-top30">
+			<p>Powered with <i class="fa fa-heart text-medium color-red margin-left5 margin-right5"></i> by <a href="http://www.juliocarneiro.com.br" class="color-black fade-in">Júlio Carneiro</a> and <a href="http://trix.juliocarneiro.com.br" class="color-black fade-in">TrixCSS</a>.</p>
+		</div>
+	</div>
+</body>
+</html>

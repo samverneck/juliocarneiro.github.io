@@ -1,0 +1,83 @@
+# Basic
+name:               "juliocarneiro"
+
+author:
+  youtubeChannel:   julioocarneiro
+  twitter:          jccarneirodev
+  github:           juliocarneiro
+  linkedin:         juliocarneiro
+  medium:           juliocarneiro
+  email:            juliocarneiro@gmail.com
+
+copyright:
+  year:             2017
+  name:             Júlio Carneiro
+
+# Google-analytics
+google-analytics:
+  id:               "UA-71929766-1"
+
+# Disqus
+disqus:
+  id:               "juliocarneiro"
+
+# URL
+url:                "https://juliocarneiro.com.br" # the base hostname & protocol for your site
+#url:                "http://localhost:4000" # use this url when you develop
+baseurl:            "" # the subpath of your site, e.g. /blog
+
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:           America/Sao_Paulo
+permalink:          /:title/
+
+# Pagination
+paginate:           5
+paginate_path:      /page:num/
+
+# Markdown
+markdown:           kramdown
+kramdown:
+  input:            GFM
+
+# Navigation
+nav:
+  - name:           "sobre"
+    url:            "/sobre"
+  - name:           "projetos"
+    url:            "/projetos"
+  - name:           "arquivo"
+    url:            "/archive"
+  - name:           "Tags"
+    url:            "/tags"
+  - name:           "github"
+    url:            "https://github.com/juliocarneiro"
+  - name:           "medium"
+    url:            "https://medium.com/@juliocarneiro"
+
+# Sass
+sass:
+  sass_dir:         _sass
+  style:            :compressed
+
+# Scopes
+defaults:
+  -
+    scope:
+      path:         ""
+      type:         "pages"
+    values:
+      layout:       "page"
+  -
+    scope:
+      path:         ""
+      type:         "posts"
+    values:
+      layout:       "post"
+
+# jekyll-seo-tag, see: http://www.rubydoc.info/gems/jekyll-seo-tag/1.2.0
+plugins:
+  - jekyll-paginate
+  - jekyll-admin
+
+exclude:            [vendor]

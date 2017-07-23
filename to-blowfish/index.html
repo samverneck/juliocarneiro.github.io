@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+	<meta name="description" content="Encripta qualquer dado em formato de texto para BlowFish">
+	<meta name="keywords" content="BlowFish, criptografia, hash, hashes">
+	<meta name="author" content="Júlio Carneiro">
+    <link rel="stylesheet" href="style.css" />
+    <link href="font-awesome.css" rel="stylesheet">
+    <link href="flexboxgrid.css" rel="stylesheet">
+    <script src="blow.js"></script>
+    <title>TO-BLOWFISH</title>
+  </head>
+  <body>
+    <div class="wrap center col-md-4 col-xs-12 col-sm-8 text-center margin-top30 box-shadow4 padding50">
+	    <h1><i class="fa fa-terminal" aria-hidden="true"></i> TO-BLOWFISH</h1>
+	    <input class="width100 margin-bottom20 color-green bold" id="data" placeholder="Digite algo..."></input>
+	    <input class="input none" id="key" type="text" value="" />
+	    <select class="select width100 bg-black color-white margin-bottom20 padding10" id="outputtype">
+		    <option value="0" selected="selected">Base64</option>
+		    <option value="1">Hex</option>
+		    <option value="2">String</option>
+		    <option value="3">Raw</option>
+	    </select>
+	    <button class="button padding20 width100 border-none bg-black color-white fade-out pointer margin-bottom20" id="encrypt">Encrypt</button>
+	    <input class="width100 color-red bold" id="result" placeholder="Resultado..."></input>
+	    <div class="bg-white color-black center margin-top50">
+			<p>Powered with <i class="fa fa-heart text-medium color-red margin-left5 margin-right5"></i> by <a href="http://www.juliocarneiro.com.br" class="color-black fade-in">Júlio Carneiro</a> and <a href="http://trix.juliocarneiro.com.br" class="color-black fade-in">TrixCSS</a>.</p>
+		</div>
+	</div>
+    <script src="script.js"></script>
+  </body>
+</html>
